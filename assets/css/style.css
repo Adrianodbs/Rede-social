@@ -33,6 +33,10 @@ header{
   box-shadow: 1px 0 3px rgba(0, 0, 0, .4);
 }
 
+header h1{
+  color: #fbfbfb;
+}
+
 /* main */
 
 .main{
