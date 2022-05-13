@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fbfbfb;
+  font-family: 'Roboto', sans-serif;
+
+  /* Para melhorar a resolução das fontes */
+  -webkit-font-smoothing: antialised !important
+}
+
+li{
+  list-style: none;
+}
+
+/* Header */
+
+header{
+  width: 100%;
+  height: 50px;
+
+  background-color: #23a0ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 1px 0 3px rgba(0, 0, 0, .4);
+}
+
+/* main */
+
+.main{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.newpost{
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 0;
+  padding: 25px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, .2);
+}
+
+.infoUser{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgUser{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.infoUser strong{
+  font-size: 16px;
+  color: #23a0ff;
+
+  margin-left: 10px;
+}
+
+.formPost{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formPost textarea{
+  background-color: #fbfbfb;
+  margin: 15px 0;
+  padding: 25px;
+  border-radius: 10px;
+  height: 90px;
+
+  /* Opção de tirar a mudança de tamanho da área */
+  resize: none;
+
+  border: 0;
+  outline: none;
+
+  font-weight: bold;
+  color: #727272;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.iconsAndButtons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.icons button{
+  outline: none;
+  background-color: #fff;
+  border: none;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.btnSubmitForm{
+  background-color: #23a0ff;
+  color: #fff;
+
+  font-weight: bold;
+  padding: 10px 50px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+  transition: backgroun-color .3s;
+}
+
+.btnSubmitForm:hover{
+  background-color: #166099;
+}
+
+/* Postagens */
+
+.post{
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, .5);
+}
+
+.infoUserPost{
+  display: flex;
+  align-items: center;
+}
+
+.imgUserPost{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #23a0ff;
+}
+
+.nameAndHour{
+  margin-left: 10px;
+}
+
+.nameAndHour strong{
+  color: #23a0ff
+}
+
+.nameAndHour p{
+  color: #aaa9a9;
+  font-size: 12px;
+}
+
+.postTexto{
+  width: 100%;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #727272;
+}
+
+.actionBtnPost{
+  display: flex;
+  align-items: center;
+}
+
+.filePost{
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.filePost img{
+  margin-right: 5px;
+}
+
+.like{
+  background: #ff6b6b;
+}
+
+.like:hover{
+  background: #f02d2d;
+}
+
+.coment{
+  background: #ffc320;
+}
+
+.coment:hover{
+  background: #dda304;
+}
+
+.share{
+  background: #23a0ff;
+}
+
+.share:hover{
+  background: #166099;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem social</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo.svg" alt="Bem social" />
+    </header>
+
+    <main class="main">
+      <div class="newpost">
+        <div class="infoUser">
+          <div class="imgUser"></div>
+          <strong>Adriano Alves</strong>
+        </div>
+
+        <form action="" class="formPost" id="formPost">
+          <textarea
+            name="textarea"
+            placeholder="Vamos mudar o mundo?"
+            id="textarea"
+          ></textarea>
+          <div class="iconsAndButtons">
+            <div class="icons">
+              <button class="btnFileForm">
+                <img src="./assets/img/img.svg" alt="Adicionar uma imagem" />
+              </button>
+              <button class="btnFileForm">
+                <img src="./assets/img/gif.svg" alt="Adicionar um gif" />
+              </button>
+              <button class="btnFileForm">
+                <img src="./assets/img/video.svg" alt="Adicionar um video" />
+              </button>
+            </div>
+            <button type="submit" class="btnSubmitForm">Publicar</button>
+          </div>
+        </form>
+      </div>
+
+      <ul class="posts" id="posts"></ul>
+    </main>
+
+    <script type="module" src="./assets/js/controllers/formpost.js"></script>
+  </body>
+</html>
