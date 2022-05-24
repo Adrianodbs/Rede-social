@@ -21,10 +21,13 @@ function formValidate(value) {
 
 btn.addEventListener('click', event => {
   event.preventDefault()
+
   if (formValidate(textArea.value)) {
+    const texto = textArea.value.replace(/\n/g, '<br>')
     const time = getTime()
     const newPost = document.createElement('li')
     newPost.classList.add('post')
+
     newPost.innerHTML = `
       <div class="infoUserPost">
             <div class="imgUserPost"></div>
@@ -32,11 +35,12 @@ btn.addEventListener('click', event => {
             <div class="nameAndHour">
               <strong>Adriano Alves</strong>
               <p>${time}</p>
+
             </div>
           </div>
 
           <p class="postTexto">
-           ${textArea.value}
+           ${texto}
           </p>
 
           <div class="actionBtnPost">
@@ -56,6 +60,7 @@ btn.addEventListener('click', event => {
             </button>
           </div>
       `
+
     posts.append(newPost)
     textArea.value = ''
   } else {
